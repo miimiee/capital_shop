@@ -119,29 +119,62 @@ u{
     color:#ffff00;
 }
 .min{
-    background-image: url("ladyblue.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 400px;
+    padding: 10px;
+    /* position: relative; */
+}
+.banner{
+    position: relative;
+}
+.banner img{
     width: 100%;
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:1228px) {
     .banner{
-        display: flex;
-        justify-content: center;
-        float: inline-end;
+        position: relative;
     }
     .mal{
-        font-size: 10px;
-
+        position: absolute;
+        top: 20%;
+        left: 50%;
     }
 }
+@media screen and (max-width:1196px) {
+    .banner{
+        position: relative;
+    }
+    .mal{
+        position: absolute;
+        top: 10%;
+        left: 50%;
+    }
+} 
+/* @media screen and (max-width:926px) {
+    .mal{
+        font-size: 12px;
+        top: 40%;
+        bottom: 3%;
+        left: 50%;
+        padding: 20px;
+    }
+    /* .mal .ale{
+        font-size: 20px;
+        margin-bottom: 1px;
+    }
+    .mal .sty{
+        margin-bottom: 1px;
+        font-size: 20px;
+    } */
+/* }
+@media screen and (max-width:600px){
+     .mal{
+        font-size: 10px;
+        top:10%;
+    }
+} */
 .mal{
    position: absolute;
-   bottom: 10%;
    top: 30%;
-   left: 45%;
-   width: 30%;
+   left: 50%;
 }
 .ale{
     color: red;
@@ -151,37 +184,33 @@ u{
 
 }
 .sty{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size: 40px;
     font-family: 'Courier New', Courier, monospace;
 }
 .lor{
-    /* width:initial; */
     margin-bottom: 10px;
-    /* font-size: larger; */
 }
-.now{
-    width: 100px;
-    margin-left: 90px;
-    padding: 10px;
-    color: aliceblue;
-    background-color: black;
-
+.hr{
+    padding:5%;
 }
 .tri{
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: center;
     gap: 20px;
-    padding: 30px;
-    position: relative;
+    padding: 50px;
+   
     }
-h2{
+    .tri .fas{
+        position: relative;
+    }
+.tri .fas h2{
     position: absolute;
-    top: 80%;
-    margin-left: 90px;
+    bottom: 10%;
+    left: 20%;
     color: rgb(220, 147, 147);
-}
+   }
 .trend{
     display: flex;
     justify-content: space-around;
@@ -308,10 +337,6 @@ height: 60px;
     font-size: 30px;
     margin-top: 10px;
 }
-hr{
-    width: 90%;
-    margin-left: 100px;
-}
 #log{
     border: none;
     width: 15%;
@@ -342,7 +367,7 @@ hr{
     width: 100%;
     height: fit-content;
 }
-@media screen and (max-width:1309px) {
+@media screen and (max-width:740px) {
     .tri{
       display: grid;
       grid-template-columns: auto auto;
@@ -379,10 +404,11 @@ hr{
         grid-template-columns: auto;
     }
 }
-@media screen and (max-width:1252px){
+@media screen and (max-width:1249px){
     .iron{
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto ;
+      text-align: center;
     }
 
 }
@@ -390,7 +416,7 @@ hr{
     .iron{
         display: grid;
         grid-template-columns: auto;
-        align-items: center;
+        /* text-align: center; */
     }
 }
 @media screen and (max-width:510px){
@@ -421,6 +447,17 @@ hr{
     }
     .mail{
         padding-bottom: 20px;
+    }
+}
+@media screen and (max-width:595px){
+    .sub{
+        padding: 20px;
+    }
+    .mail{
+        width: 70%;
+    }
+    .scri{
+        width: 80%;
     }
 }
 @media screen and (max-width:650px) {
